@@ -9,6 +9,13 @@ PHP                                                                        NEWS
     needing to be present beforehand. (ndossche)
   . Added `clamp()`. (kylekatarnls, thinkverse)
 
+- Date:
+  . Update timelib to 2022.16. (Derick)
+
+- DOM:
+  . Removed LIBXML_XINCLUDE from valid options for XMLDocument,
+    as it was a no-op. (ndossche)
+
 - Fileinfo:
   . Fixed bug GH-20679 (finfo_file() doesn't work on remote resources).
     (ndossche)
@@ -31,10 +38,16 @@ PHP                                                                        NEWS
   . Fixed bug GH-20483 (ASAN stack overflow with fiber.stack_size INI
     small value). (David Carlier)
 
+- Mail:
+  . Fixed bug GH-20862 (null pointer dereference in 
+    php_mail_detect_multiple_crlf via error_log (jordikroon)
+
 - Mbstring:
   . ini_set() with mbstring.detect_order changes the order of mb_detect_order
     as intended, since mbstring.detect_order is an INI_ALL setting. (tobee94)
   . Added GB18030-2022 to default encoding list for zh-CN. (HeRaNO)
+  . Fixed bug GH-20836 (Stack overflow in mb_convert_variables with
+    recursive array references). (alexandre-daubois)
 
 - Opcache:
   . Fixed bug GH-20051 (apache2 shutdowns when restart is requested during
@@ -50,6 +63,8 @@ PHP                                                                        NEWS
     ignored. (ndossche)
   . Support overridden methods in SplFileInfo for getMTime() and getPathname()
     when building a phar. (ndossche)
+  . Mark Phar::buildFromIterator() base directory argument as a path.
+    (ndossche)
 
 - Reflection:
   . Fixed bug GH-20217 (ReflectionClass::isIterable() incorrectly returns true
