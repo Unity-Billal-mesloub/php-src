@@ -56,8 +56,8 @@ releases.
 
 3. Ensure that the relevant tests on CI are green.
 
-   - https://cirrus-ci.com/github/php/php-src
-   - https://github.com/php/php-src/actions
+   - https://cirrus-ci.com/github/Unity-Billal-mesloub/php-src
+   - https://github.com/Unity-Billal-mesloub/php-src/actions
 
    > 💡 **Tip** \
    > We recommend checking the build status a couple of days before packaging day
@@ -80,13 +80,13 @@ releases.
 
 5. Verify the tags to be extra sure everything was tagged properly.
 
-6. There is a PHP release Docker image https://github.com/sgolemon/php-release
+6. There is a PHP release Docker image https://github.com/Unity-Billal-mesloub/php-release
    with forks available to help with releases.
 
 7. Communicate with release managers via release-managers@php.net.
 
 8. References to repositories in this document refer to the canonical source
-   located at https://github.com/php.
+   located at https://github.com/Unity-Billal-mesloub
 
 9. It might be helpful to name your remote repositories something other than
    "origin" to avoid accidentally pushing changes to "origin" with [muscle
@@ -376,8 +376,7 @@ slightly different steps. We'll call attention where the steps differ.
 
     Tag: php-8.1.6RC1
     Tarballs: https://downloads.php.net/~ramsey/
-    Manifest: https://gist.github.com/ramsey/5d73f0717effb6d8d17699381361e4b1
-
+    Manifest: https://gist.github.com/Unity-Billal-mesloub/39ba66403e126eb08b87de8903389c8d
     Cheers,
     Ben
 
@@ -444,22 +443,22 @@ slightly different steps. We'll call attention where the steps differ.
    > remember that
    > * `qa.php.net` has been replaced with https://www.php.net/release-candidates.php
    > * `bugs.php.net` has been replaced with GitHub issues, use
-   >    `https://github.com/php/php-src/issues/new?template=bug_report.yml`
+   >    `https://github.com/Unity-Billal-mesloub/php-src/issues/new?template=bug_report.yml`
    >   to link directly to the form for creating a new bug report.
    > * Since 8.4 there have only been 4 release candidates for PHP X.Y.0, rather than 6.
 
-   * [Announce 8.1.0alpha1](https://github.com/php/web-php/commit/57b9675c8d8550493289fa1fba77427c93cdd472)
-   * [Announce 8.1.0alpha2](https://github.com/php/web-php/commit/cec044fc0763f5cfa77d0e79479f8b6279023570)
-   * [Announce 8.1.0alpha3](https://github.com/php/web-php/commit/5c480765f444a3fddfd575e01fe0be3fcfdde05b)
-   * [Announce 8.1.0beta1](https://github.com/php/web-php/commit/40840e3c3f89d6dd95baa4b8cdf22d6f206f86c2)
-   * [Announce 8.1.0beta2](https://github.com/php/web-php/commit/7bf6acdadd4940bd9db711bf3f9d5a4054dc0722)
-   * [Announce 8.1.0beta3](https://github.com/php/web-php/commit/38c8a872700fb0c2ebde49e2eae3374257ba6d08)
-   * [Announce 8.1.0RC1](https://github.com/php/web-php/commit/6e4bf3d0228ce113728d5f1a769ed42e0d63ca10)
-   * [Announce 8.1.0RC2](https://github.com/php/web-php/commit/1ae95f4b686a5d614a94a664a7466ee0e5cd21eb)
-   * [Announce 8.1.0RC3](https://github.com/php/web-php/commit/3091246d77a3f445fcc593587597d0abcab8c373)
-   * [Announce 8.1.0RC4](https://github.com/php/web-php/commit/fbaeb9403f4e2856115889946d3f63751e183c7b)
-   * [Announce 8.1.0RC5](https://github.com/php/web-php/commit/46473ccccfb5f7fedc3f169c55fb7c22a596b55d)
-   * [Announce 8.1.0RC6](https://github.com/php/web-php/commit/cacaef9c41352b5dbf3fbbf44702cc6c0cbfb478)
+   * [Announce 8.1.0alpha1](https://github.com/Unity-Billal-mesloub/web-php/commit/57b9675c8d8550493289fa1fba77427c93cdd472)
+   * [Announce 8.1.0alpha2](https://github.com/Unity-Billal-mesloub/web-php/commit/cec044fc0763f5cfa77d0e79479f8b6279023570)
+   * [Announce 8.1.0alpha3](https://github.com/Unity-Billal-mesloub/web-php/commit/5c480765f444a3fddfd575e01fe0be3fcfdde05b)
+   * [Announce 8.1.0beta1](https://github.com/Unity-Billal-mesloub/web-php/commit/40840e3c3f89d6dd95baa4b8cdf22d6f206f86c2)
+   * [Announce 8.1.0beta2](https://github.com/Unity-Billal-mesloub/web-php/commit/7bf6acdadd4940bd9db711bf3f9d5a4054dc0722)
+   * [Announce 8.1.0beta3](https://github.com/Unity-Billal-mesloub/web-php/commit/38c8a872700fb0c2ebde49e2eae3374257ba6d08)
+   * [Announce 8.1.0RC1](https://github.com/Unity-Billal-mesloub/web-php/commit/6e4bf3d0228ce113728d5f1a769ed42e0d63ca10)
+   * [Announce 8.1.0RC2](https://github.com/Unity-Billal-mesloub/web-php/commit/1ae95f4b686a5d614a94a664a7466ee0e5cd21eb)
+   * [Announce 8.1.0RC3](https://github.com/Unity-Billal-mesloub/web-php/commit/3091246d77a3f445fcc593587597d0abcab8c373)
+   * [Announce 8.1.0RC4](https://github.com/Unity-Billal-mesloub/web-php/commit/fbaeb9403f4e2856115889946d3f63751e183c7b)
+   * [Announce 8.1.0RC5](https://github.com/Unity-Billal-mesloub/web-php/commit/46473ccccfb5f7fedc3f169c55fb7c22a596b55d)
+   * [Announce 8.1.0RC6](https://github.com/Unity-Billal-mesloub/web-php/commit/cacaef9c41352b5dbf3fbbf44702cc6c0cbfb478)
 
    > ⚠️ **Important** \
    > In your announcement news entry, be sure to include the following text or
@@ -492,7 +491,7 @@ slightly different steps. We'll call attention where the steps differ.
    > remember that
    > * `qa.php.net` has been replaced with https://www.php.net/release-candidates.php
    > * `bugs.php.net` has been replaced with GitHub issues, use
-   >    `https://github.com/php/php-src/issues/new?template=bug_report.yml`
+   >    `https://github.com/Unity-Billal-mesloub/php-src/issues/new?template=bug_report.yml`
    >   to link directly to the form for creating a new bug report.
    > * Since 8.4 there have only been 4 release candidates for PHP X.Y.0, rather than 6.
 
@@ -512,17 +511,6 @@ slightly different steps. We'll call attention where the steps differ.
    > new releases, so they can make sure their projects keep working and can
    > report any potential bugs that should be fixed before the upcoming GA
    > release.
-
-5. 🔶 **For alphas, betas, and *pre-GA* RCs,** coordinate with the
-   social media team (i.e., Derick and Sergey) to post a toot containing the
-   release announcement and link to the news entry on php.net.
-   You can send a PR to [toot-together](https://github.com/derickr/toot-together/)
-   with highlights from the NEWS file yourself, if you want.
-
-   * [Announce 8.5.0alpha1](https://github.com/derickr/toot-together/pull/42)
-   * [Announce 8.5.0alpha2](https://github.com/derickr/toot-together/pull/47)
-
-   We post to [@php@fosstodon.org](https://fosstodon.org/@php).
 
 
 ## Packaging a stable release
@@ -702,7 +690,7 @@ slightly different steps. We'll call attention where the steps differ.
 
     Tag: php-8.1.6
     Tarballs: web-php-distributions
-    Manifest: https://gist.github.com/ramsey/432fcf8afcbfb1f1de6c3ab47d82e366
+    Manifest: https://gist.github.com/Unity-Billal-mesloub/512cc4aa53a43736da4e5fc70e1c400f
 
     Cheers,
     Ben
@@ -760,7 +748,7 @@ slightly different steps. We'll call attention where the steps differ.
    You may edit the generated files to expand on the base message, if needed.
 
    The edits are necessary for PHP-X.Y.0 version where the format is different.
-   See for example [PHP-8.2 announcement](https://github.com/php/web-php/commit/c966868202caafa880213055f4e3e97c0483119b)
+   See for example [PHP-8.2 announcement](https://github.com/Unity-Billal-mesloub/web-php/commit/)
 
 7. Update the ChangeLog file for the given major version (e.g., `ChangeLog-8.php`).
 
@@ -770,7 +758,7 @@ slightly different steps. We'll call attention where the steps differ.
    for PHP 8.4) added above the first anchor of the previous version.
 
    ```shell
-   ./bin/news2html 'https://github.com/php/php-src/raw/php-X.Y.Z/NEWS' 'X.Y.Z' 'ChangeLog-X.php'
+   ./bin/news2html 'https://github.com/Unity-Billal-mesloub/php-src/raw/php-X.Y.Z/NEWS' 'X.Y.Z' 'ChangeLog-X.php'
    ```
 8. Update the information in the `$QA_RELEASES` array in `include/release-qa.php`.
 
@@ -838,7 +826,7 @@ slightly different steps. We'll call attention where the steps differ.
    > often occurs.
 
 13. Coordinate with the social media team (i.e., Derick) to
-    [create a PR request](https://github.com/derickr/toot-together/blob/main/toots/README.md)
+    [create a PR request](https://github.com/Unity-Billal-mesloub)
     for posting the release announcement to Mastodon. Posts need to be
     approved.
 
@@ -937,7 +925,7 @@ feature development that cannot go into the new version.
 2. Just prior to tagging `X.Y.0RC1`, create the new version branch locally,
    i.e. `PHP-X.Y`.
 
-3. Add a commit on the main branch (i.e., `master`) after the branch point.
+3. Add a commit on the main branch (i.e., `main`) after the branch point.
 
    This commit should:
 
@@ -984,10 +972,10 @@ feature development that cannot go into the new version.
    5 times to get it to `master`. The following files need to be updated:
 
    * `.github/matrix.php` (add new branch, update version for `master`)
-   [Updating after 8.5 branch cut](https://github.com/php/php-src/commit/197921a8aa7b2f9af103b439bf913e23d6ed1b98)
+   [Updating after 8.5 branch cut](https://github.com/Unity-Billal-mesloub/php-src/commit/197921a8aa7b2f9af103b439bf913e23d6ed1b98)
 
    * `.github/scripts/windows/find-target-branch.bat` (update version for `master`)
-   [Updating after 8.5 branch cut](https://github.com/php/php-src/commit/107075605db6f1b15ce275e345d1c6de04a464b0)
+   [Updating after 8.5 branch cut](https://github.com/Unity-Billal-mesloub/php-src/commit/107075605db6f1b15ce275e345d1c6de04a464b0)
 
 9. Update the `.github/workflows/push.yml` file with the new branch. This file
    does not need to be updated on the lowest supported branch; just update the
@@ -1001,7 +989,7 @@ feature development that cannot go into the new version.
     the new version is ready. If the new version is not ready when the branch is cut, file an
     issue reporting the problem. For example:
 
-    * [Updating after 8.5 branch cut](https://github.com/php/php-src/commit/f7e39a91d5a9de53fc4e184f6fce6116ca3388a1)
+    * [Updating after 8.5 branch cut](https://github.com/Unity-Billal-mesloub/php-src/commit/f7e39a91d5a9de53fc4e184f6fce6116ca3388a1)
 
 ## Preparing for the initial stable version (PHP X.Y.0)
 
@@ -1039,7 +1027,7 @@ feature development that cannot go into the new version.
    provides security researchers with confidence they are using our most
    up-to-date reporting policies.
 
-   The `security.txt` file is located in the [web-php repository](https://github.com/php/web-php)
+   The `security.txt` file is located in the [web-php repository](https://github.com/Unity-Billal-mesloub/web-php)
    under the `.well-known/` directory. We may make changes to this file at other
    times, as needed, but we will always advance the `Expires` timestamp on a
    yearly cadence, coinciding with our X.Y.0 releases.
@@ -1077,7 +1065,7 @@ volunteers to begin the selection process for the next release managers.
    to get a PHP account (if you don't already have one).
 
 2. Request membership to the
-   [release managers group](https://github.com/orgs/php/teams/release-managers) on GitHub.
+   [release managers group](https://github.com/Unity-Billal-mesloub/php) on GitHub.
 
 3. Make sure you are subscribed to all of the mailing lists that you will need to send
    announcements to, since you cannot post to the lists otherwise:
@@ -1181,9 +1169,9 @@ volunteers to begin the selection process for the next release managers.
 
 6. Make sure you have the following repositories cloned locally:
 
-   * https://github.com/php/php-src
-   * https://github.com/php/web-php
-   * https://github.com/php/web-php-distributions
+   * https://github.com/Unity-Billal-mesloub/php/php-src
+   * https://github.com/Unity-Billal-mesloub/php/web-php
+
 
 
 [general availability]: https://en.wikipedia.org/wiki/Software_release_life_cycle#General_availability_(GA)
