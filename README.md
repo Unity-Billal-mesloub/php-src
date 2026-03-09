@@ -14,7 +14,7 @@ web development. Fast, flexible and pragmatic, PHP powers everything from your
 blog to the most popular websites in the world. PHP is distributed under the
 [PHP License v3.01](LICENSE).
 
-[![Push](https://github.com/php/php-src/actions/workflows/push.yml/badge.svg)](https://github.com/php/php-src/actions/workflows/push.yml)
+[![Push](https://github.com/Unity-Billal-mesloub/php-src/actions/workflows/push.yml/badge.svg)](https://github.com/Unity-Billal-mesloub/php-src/actions/workflows/push.yml)
 [![Fuzzing Status](https://oss-fuzz-build-logs.storage.googleapis.com/badges/php.svg)](https://issues.oss-fuzz.com/issues?q=project:php)
 
 ## Documentation
@@ -134,7 +134,7 @@ Extension Community Library - [PECL](https://pecl.php.net).
 ## Contributing
 
 The PHP source code is located in the Git repository at
-[github.com/php/php-src](https://github.com/php/php-src). Contributions are most
+[github.com/php/php-src](https://github.com/Unity-Billal-mesloub/php-src). Contributions are most
 welcome by forking the repository and sending a pull request.
 
 Discussions are done on GitHub, but depending on the topic can also be relayed
