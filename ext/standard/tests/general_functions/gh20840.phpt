@@ -12,7 +12,7 @@ if (getenv('SKIP_ASAN')) {
 }
 ?>
 --INI--
-zend.max_allowed_stack_size=512K
+zend.max_allowed_stack_size=256K
 --FILE--
 <?php
 class Node {
@@ -28,11 +28,20 @@ for ($i = 0; $i < 50000; $i++) {
     $node = $newNode;
 }
 
+$buffer = '';
+ob_start(function ($chunk) use (&$buffer) {
+    $buffer .= $chunk;
+    $buffer = preg_replace('(\s*object\(Node\)#\d+ \(\d+\) \{\s*)', '', $buffer);
+    $buffer = preg_replace('(\s*\["next"\]=>\s*)', '', $buffer);
+    $buffer = preg_replace('(\s*\}\s*)', '', $buffer);
+});
 var_dump($firstNode);
+ob_end_flush();
+echo $buffer;
 
 while ($next = $firstNode->next) {
     $firstNode->next = $next->next;
 }
 ?>
---EXPECTREGEX--
-^object\(Node\)#\d+ \(\d+\).*(nesting level too deep|["\s}]*)$
+--EXPECT--
+nesting level too deep

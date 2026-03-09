@@ -100,7 +100,7 @@ static zend_function *zend_duplicate_internal_function(const zend_function *func
 {
 	zend_function *new_function;
 
-	if (UNEXPECTED(ce->type & ZEND_INTERNAL_CLASS)) {
+	if (UNEXPECTED(ce->type == ZEND_INTERNAL_CLASS)) {
 		new_function = (zend_function *)pemalloc(sizeof(zend_internal_function), 1);
 		memcpy(new_function, func, sizeof(zend_internal_function));
 	} else {
@@ -1669,7 +1669,7 @@ static void do_inherit_class_constant(zend_string *name, zend_class_constant *pa
 				Z_CONSTANT_FLAGS(c->value) |= CONST_OWNED;
 			}
 		}
-		if (ce->type & ZEND_INTERNAL_CLASS) {
+		if (ce->type == ZEND_INTERNAL_CLASS) {
 			c = pemalloc(sizeof(zend_class_constant), 1);
 			memcpy(c, parent_const, sizeof(zend_class_constant));
 			parent_const = c;
@@ -2151,7 +2151,7 @@ static void do_inherit_iface_constant(zend_string *name, zend_class_constant *c,
 				Z_CONSTANT_FLAGS(c->value) |= CONST_OWNED;
 			}
 		}
-		if (ce->type & ZEND_INTERNAL_CLASS) {
+		if (ce->type == ZEND_INTERNAL_CLASS) {
 			ct = pemalloc(sizeof(zend_class_constant), 1);
 			memcpy(ct, c, sizeof(zend_class_constant));
 			c = ct;
@@ -2263,7 +2263,6 @@ static void zend_do_implement_interfaces(zend_class_entry *ce, zend_class_entry 
 		if (UNEXPECTED(!(iface->ce_flags & ZEND_ACC_INTERFACE))) {
 			efree(interfaces);
 			zend_error_noreturn(E_ERROR, "%s cannot implement %s - it is not an interface", ZSTR_VAL(ce->name), ZSTR_VAL(iface->name));
-			return;
 		}
 		for (uint32_t j = 0; j < num_interfaces; j++) {
 			if (interfaces[j] == iface) {
@@ -2273,7 +2272,6 @@ static void zend_do_implement_interfaces(zend_class_entry *ce, zend_class_entry 
 						zend_get_object_type_uc(ce),
 						ZSTR_VAL(ce->name),
 						ZSTR_VAL(iface->name));
-					return;
 				}
 				/* skip duplications */
 				ZEND_HASH_MAP_FOREACH_STR_KEY_PTR(&iface->constants_table, key, c) {
@@ -2524,7 +2522,6 @@ static uint32_t zend_check_trait_usage(const zend_class_entry *ce, const zend_cl
 {
 	if (UNEXPECTED((trait->ce_flags & ZEND_ACC_TRAIT) != ZEND_ACC_TRAIT)) {
 		zend_error_noreturn(E_COMPILE_ERROR, "Class %s is not a trait, Only traits may be used in 'as' and 'insteadof' statements", ZSTR_VAL(trait->name));
-		return 0;
 	}
 
 	for (uint32_t i = 0; i < ce->num_traits; i++) {
@@ -2533,7 +2530,6 @@ static uint32_t zend_check_trait_usage(const zend_class_entry *ce, const zend_cl
 		}
 	}
 	zend_error_noreturn(E_COMPILE_ERROR, "Required Trait %s wasn't added to %s", ZSTR_VAL(trait->name), ZSTR_VAL(ce->name));
-	return 0;
 }
 /* }}} */
 
