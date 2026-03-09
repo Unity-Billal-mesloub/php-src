@@ -1177,22 +1177,22 @@ volunteers to begin the selection process for the next release managers.
 [general availability]: https://en.wikipedia.org/wiki/Software_release_life_cycle#General_availability_(GA)
 [muscle memory]: https://en.wikipedia.org/wiki/Muscle_memory
 [Conditional Includes For Git Config]: https://motowilliams.com/2017-05-11-conditional-includes-for-git-config/
-[Update versions for PHP 8.1.0beta3]: https://github.com/php/php-src/commit/3edd1087c70bee2ec21f0fbec1a575d78a500f15
-[Update versions for PHP 8.1.6RC1]: https://github.com/php/php-src/commit/40e8ced23898e3069340ca03ea5febc5361015ad
-[Update NEWS for PHP 8.1.6RC1]: https://github.com/php/php-src/commit/a4fdeaebe419b88e3b4a1f5aba845c2d4e81fd4e
-[Prepare for PHP 8.1.0RC1]: https://github.com/php/php-src/commit/5764414eb8900ae98020a3c20693f4fb793efa99
-[Update NEWS for PHP 8.2.0 alpha2]: https://github.com/php/php-src/commit/418f7211f71658d79d934861be20f277db96fe2c
-[Update NEWS for PHP 8.2.0RC6]: https://github.com/php/php-src/commit/4ccc414961a70200d638ca281a35f893226d74e2
-[PHP 8.3 is now for PHP 8.3.21-dev]: https://github.com/php/php-src/commit/b57f425cfe20a11003253427424cc0517483550b
+[Update versions for PHP 8.1.0beta3]: https://github.com/Unity-Billal-mesloub/php-src/commit/3edd1087c70bee2ec21f0fbec1a575d78a500f15
+[Update versions for PHP 8.1.6RC1]: https://github.com/Unity-Billal-mesloub/php-src/commit/40e8ced23898e3069340ca03ea5febc5361015ad
+[Update NEWS for PHP 8.1.6RC1]: https://github.com/Unity-Billal-mesloub/php-src/commit/a4fdeaebe419b88e3b4a1f5aba845c2d4e81fd4e
+[Prepare for PHP 8.1.0RC1]: https://github.com/Unity-Billal-mesloub/php-src/commit/5764414eb8900ae98020a3c20693f4fb793efa99
+[Update NEWS for PHP 8.2.0 alpha2]: https://github.com/Unity-Billal-mesloub/php-src/commit/418f7211f71658d79d934861be20f277db96fe2c
+[Update NEWS for PHP 8.2.0RC6]: https://github.com/Unity-Billal-mesloub/php-src/commit/4ccc414961a70200d638ca281a35f893226d74e2
+[PHP 8.3 is now for PHP 8.3.21-dev]: https://github.com/Unity-Billal-mesloub/php-src/commit/b57f425cfe20a11003253427424cc0517483550b
 [GitHub command line tool]: https://cli.github.com
 [merged upwards as usual]: https://wiki.php.net/vcs/gitworkflow
-[Update versions for PHP 8.1.7]: https://github.com/php/php-src/commit/d35e577a1bd0b35b9386cea97cddc73fd98eed6d
-[Update NEWS for PHP 8.1.7]: https://github.com/php/php-src/commit/b241f07f52ca9f87bf52be81817f475e6e727439
-[Announce PHP 8.1.6]: https://github.com/php/web-php/commit/9f796a96c65f07e45845ec248933bfb0010b94a9
+[Update versions for PHP 8.1.7]: https://github.com/Unity-Billal-mesloub/php-src/commit/d35e577a1bd0b35b9386cea97cddc73fd98eed6d
+[Update NEWS for PHP 8.1.7]: https://github.com/Unity-Billal-mesloub/php-src/commit/b241f07f52ca9f87bf52be81817f475e6e727439
+[Announce PHP 8.1.6]: https://github.com/Unity-Billal-mesloub/web-php/commit/9f796a96c65f07e45845ec248933bfb0010b94a9
 [feature freeze]: https://en.wikipedia.org/wiki/Freeze_(software_engineering)
-[Prepare for PHP 8.2]: https://github.com/php/php-src/commit/1c33ddb5e5598c5385c4c965992c6e031fd00dd6
-[Prepare for PHP 8.2 (bis)]: https://github.com/php/php-src/commit/a93e12f8a6dfc23e334339317c97aa35356db821
-[Add PHP-8.1 to the Git steps page]: https://github.com/php/web-php/commit/1fcd78c2817cf1fbf1a1de2ddec1350be4e26491
+[Prepare for PHP 8.2]: https://github.com/Unity-Billal-mesloub/php-src/commit/1c33ddb5e5598c5385c4c965992c6e031fd00dd6
+[Prepare for PHP 8.2 (bis)]: https://github.com/Unity-Billal-mesloub/php-src/commit/a93e12f8a6dfc23e334339317c97aa35356db821
+[Add PHP-8.1 to the Git steps page]: https://github.com/Unity-Billal-mesloub/web-php/commit/1fcd78c2817cf1fbf1a1de2ddec1350be4e26491
 [Changes to the wiki]: https://wiki.php.net/vcs/gitworkflow?do=diff&rev2%5B0%5D=1617123194&rev2%5B1%5D=1654728193&difftype=sidebyside
 [migration guide]: https://www.php.net/manual/en/migration81.php
 [GPG key]: https://en.wikipedia.org/wiki/GNU_Privacy_Guard
@@ -1200,4 +1200,3 @@ volunteers to begin the selection process for the next release managers.
 [sign your GPG key]: https://carouth.com/articles/signing-pgp-keys/
 [gitfaq-mandatory]: https://wiki.php.net/vcs/gitfaq#mandatory_git_settings
 [Send emails from a different address or alias]: https://support.google.com/mail/answer/22370?hl=en
-[security-txt]: https://github.com/php/policies/blob/main/security-policies.rst#making-changes-to-securitytxt
